@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Luisana Fuster">
+  <meta name="description" content="No más de 165 caracteres">
+  <meta name="keywords" content="portafolio, Web Developer, Programming">
+  <meta name="theme-color" content='#aaa'>
+  <title>portafolio Luisana Fuster</title>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+  <script type="module" src="assets/js/main.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "bVc1CTdPFcyZIxy4A",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader flex--container">
+    <div class="animationloader"></div>
+  </div>
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <div class="logo-container flex--container">
+        <span><a href="index.html" class="logo-text">LF</a></span>
+      </div>
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#aboutme">Sobre mi</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contactame</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+  <div class="entrances">
+    <main>
+
+      <section id="home" class="home">
+        <div class="container-descripcion">
+          <img src="/assets/images/Luisana.jpg" alt="Luisana">
+          <div class="description">
+            <h1>Hola, soy Luisana Fuster</h1>
+            <p>Soy desarrollador Web</p>
+            <a href="/assets/documents/cv.pdf" class="btn-cv button" target="_blank">Descargar CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutme" class="about section">
+        <h2 class="section__title">Acerca de Mí</h2>
+
+        <div class="about__container grid--container">
+          <p class="about__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+            incidunt aut distinctio maxime recusandae. Velit exercitationem
+            ducimus cupiditate corrupti eveniet soluta accusamus quasi,
+            suscipit, vitae optio, officiis rerum cumque numquam.
+          </p>
+
+          <div class="about__cards flex--container">
+
+            <div class="about__card">
+              <img class="about__card--img" src="assets/images/image1.jpg" alt="Programando" title="Programando" />
+            </div>
+
+            <div class="about__card">
+              <img class="about__card--img" src="assets/images/image2.jpg" alt="Actualizando la base de datos"
+                title="Actualizando la base de datos" />
+            </div>
+
+            <div class="about__card">
+              <img class="about__card--img" src="assets/images/image3.jpg" alt="Resolviendo errores"
+                title="Resolviendo errores" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills section">
+        <h2 class="section__title">Habilidades</h2>
+
+        <div class="skills__container grid--container">
+          <p class="skills__description flex--container">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+            incidunt aut distinctio maxime recusandae. Velit exercitationem
+            ducimus cupiditate corrupti eveniet soluta accusamus quasi,
+            suscipit, vitae optio, officiis rerum cumque numquam.
+          </p>
+
+          <div class="slider">
+            <ul>
+              <li class="slider__item">
+                <img src="assets/images/HTML5.png" alt="">
+                <h3 class="skills__card-title">HTML</h3>
+              </li>
+              <li class="slider__item">
+                <img src="assets/images/CSS3.png" alt="">
+                <h3 class="skills__card-title">CSS</h3>
+
+
+              </li>
+              <li class="slider__item">
+                <img src="assets/images/JavaScript.png" alt="">
+                <h3 class="skills__card-title">Javascript</h3>
+
+              </li>
+              <li class="slider__item">
+                <img src="assets/images/react.png" alt="">
+                <h3 class="skills__card-title">React</h3>
+              </li>
+              <li class="slider__item">
+                <img src="assets/images/wordpress.png" alt="">
+                <h3 class="skills__card-title">Wordpress</h3>
+
+              </li>
+              <li class="slider__item">
+                <img src="assets/images/HTML5.png" alt="">
+                <h3 class="skills__card-title">HTML</h3>
+
+              </li>
+            </ul>
+
+          </div>
+          <div class="skills__tags flex--container">
+            <h3 class="skills__tags-title">Competencias</h3>
+            <div class="skills__tags-container flex--container">
+              <span class="skills__tag">Responsable</span>
+              <span class="skills__tag">Trabajo en equipo</span>
+              <span class="skills__tag">Creativa</span>
+              <span class="skills__tag">Puntual</span>
+              <span class="skills__tag">Proactiva</span>
+              <span class="skills__tag">Autodidacta</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section">
+        <h2 class="section__title">Proyectos</h2>
+
+        <div class="projects__container grid--container">
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img src="assets/images/proyect1.PNG" alt="project 1" title="Ecommerce Vanilla" />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Proyecto 1</h3>
+                <p class="projects__description">
+                  Esta es una Tienda online dedicada a la venta de productos de belleza. Este fue un proyecto que
+                  realice
+                  mientras aun cursaba mis estudios en la universidad al cual le realice modificaciones y mejoras luego
+                  de
+                  culminar mis estudios.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    <a href="https://luisanafh.github.io/BeautyStar/index.html" target="_blank">VER DEMO</a>
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    <a href="https://github.com/luisanafh/BeautyStar.git" target="_blank">VER CÓDIGO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img src="assets/images/proyect2.PNG" alt="project 1" title="barberia con wordpress" />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Proyecto 2</h3>
+                <p class="projects__description">
+                  Este es una pagina web y blog para un barbero hecha con wordpress, donde muestra sus trabajos, su
+                  contacto y publica
+                  cualquier contenido que desee.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    <a href="https://agustinbarber.com/" target="_blank">VER DEMO</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img src="assets/images/project3.jpg" alt="project 1" title="CRUD con React" />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Proyecto 3</h3>
+                <p class="projects__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    VER DEMO
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    VER CÓDIGO
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img src="assets/images/project4.png" alt="project 1" title="Aplicación del tiempo con React" />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Proyecto 4</h3>
+                <p class="projects__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    VER DEMO
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    VER CÓDIGO
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <h2 class="section__title">Contacto</h2>
+
+        <div class="contact__container grid--container">
+          <div class="contact__info">
+            <h3 class="contact__info-title">Información de contacto</h3>
+            <p class="contact__info-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <address class="contact__info-data">
+              <div class="contact__info-item container">
+                <i class="bx bxl-whatsapp"></i>
+
+                <span class="contact__info-number">
+                  <a href="https://wa.me/584169261705" target="_blank" rel="noreferrer nofollow">Enviar mensaje a
+                    WhatsApp</a>
+                </span>
+              </div>
+
+              <div class="contact__info-item container">
+                <i class="bx bx-phone"></i>
+
+                <span class="contact__info-number">
+                  <a href="tel:+584169261705" target="_blank" rel="noreferrer nofollow">
+                    +58 4169261705
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info-item container">
+                <i class="bx bxs-envelope"></i>
+
+                <span class="contact__info-mail">
+                  <a id="mail" href="mailto:luvifusterh@gmail.com" target="_blank" rel="noreferrer nofollow">
+                    luvifusterh@gmail.com
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info-item map">
+                <i class="bx bx-map"></i>
+
+                <span class="contact__info-map"> Caracas, Venezuela </span>
+              </div>
+            </address>
+          </div>
+          <div class="contact__form">
+            <h3 class="contact__form-title">Enviar mensaje</h3>
+
+            <form id="form" class="contact__form-container">
+              <div class="contact__form-group">
+                <label for="name" class="contact__form-label">Nombre</label>
+                <input type="text" id="name" name="name" class="contact__form-input" required />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="email" class="contact__form-label">Correo</label>
+                <input type="email" id="email" name="email" class="contact__form-input" required />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="subject" class="contact__form-label">Asunto</label>
+                <input type="text" id="subject" name="subject" class="contact__form-input" required />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="message" class="contact__form-label">Mensaje</label>
+                <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"
+                  required></textarea>
+              </div>
+              <dialog class="contact__form-modal" id="modal">
+                Formulario enviado con éxito!
+                <button type="reset" id="btn_close-modal" class="btn">Cerrar</button>
+              </dialog>
+              <dialog class="contact__form-modal error" id="error">
+                ERROR <br> Por favor rellene todos los datos
+                <button id="close" class="btn">Cerrar</button>
+              </dialog>
+
+              <button type="submit" class="btn contact__form-button">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Luisana Fuster</h3>
+        <p class="footer__description">
+          desarrollador web.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>
+
+        <div class="redes-container">
+          <ul>
+            <li class="animation"><a href="https://github.com/luisanafh" class="Github" target="_blank"><i
+                  class="fab fa-github"></i></a></li>
+            <li class="animation"><a href="https://www.linkedin.com/in/luisana-fuster-hernandez-a30a71245/"
+                class="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="animation"><a href="https://wa.me/584169261705" class="Whatsapp" target="_blank"><i
+                  class="fab fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+
+        <p class="footer__copy">&#64;<span> </span>Todos los derechos reservados</p>
+  </footer>
+
+</body>

@@ -42,6 +42,9 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	max-width: 100%;
+	margin: 0;
+
 	*,
 	*::before,
 	*::after {
@@ -51,6 +54,8 @@ html {
 		background-color: var(--primary-color);
 		color: var(--text-color);
 		margin: 0;
+		max-width: 100%;
+		overflow-x: hidden;
 	}
 	ul {
 		list-style: none;
@@ -188,6 +193,7 @@ html {
 	aspect-ratio: 1;
 	border-radius: 50%;
 	margin: auto;
+	justify-content: center;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -249,7 +255,7 @@ html {
 	border-radius: 50%;
 	position: relative;
 	box-shadow: var(--box-shadow);
-	margin: 5px 30px;
+	margin: 5px 15px;
 }
 
 .header {
@@ -257,15 +263,20 @@ html {
 	top: -110px;
 	left: 0;
 	width: 100%;
+	max-width: 100%;
 	height: var(--header-height);
 	align-content: center;
+	justify-content: space-between;
 	background-color: var(--header-color);
 	z-index: 3;
 	-webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 	animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 	.navbar {
-		justify-content: space-between;
-
+		justify-content: flex-start;
+		width: 100%;
+		max-width: 100%;
+		overflow-x: hidden;
+		gap: 14px;
 		.navbar__menu {
 			position: fixed;
 			top: -500%;
@@ -349,7 +360,7 @@ html {
 
 /* toggles  */
 .navbar__toggles {
-	gap: 1rem;
+	gap: 5px;
 	/* darkmode toggle */
 	.navbar__toggle--darkmode {
 		.navbar__toggle--darkmode-label {
@@ -503,6 +514,7 @@ h1 {
 	position: relative;
 	top: 110px;
 	display: flex;
+	max-width: 100%;
 	z-index: var(--z-modal);
 	img {
 		width: 45%;

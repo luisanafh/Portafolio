@@ -228,9 +228,10 @@ html {
 }
 .button {
 	text-decoration: none;
-	width: 100px;
-	height: 20px;
-	padding: 20px;
+	width: 150px;
+	height: 60px;
+	padding: 10px;
+	display: flex;
 	color: var(--text-color);
 	background-image: linear-gradient(rgb(82, 167, 196), rgb(81, 84, 187));
 	border-radius: 8px;
@@ -828,13 +829,13 @@ h1 {
 	font-size: 20px;
 	text-align: center;
 	.btn {
-		display: flex;
+		display: inline;
 		margin: auto;
 		margin-top: 10%;
-		width: 58px;
-		height: 30px;
+		width: 70px;
+		height: 40px;
 		font-size: 16px;
-		padding: 6px;
+		padding: 8px;
 	}
 }
 
@@ -943,7 +944,10 @@ h1 {
 		--normal-font-size: 20px;
 		--small-font-size: 15px;
 	}
-
+	.button {
+		display: inline;
+		padding: 25px;
+	}
 	.header {
 		height: 110px;
 		.navbar {

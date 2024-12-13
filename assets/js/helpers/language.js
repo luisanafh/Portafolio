@@ -28,8 +28,8 @@ function applyPreferredLanguage() {
 	}
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function language() {
 	applyPreferredLanguage();
 	handleLanguageToggle();
-});
-export default addEventListener;
+}
+export default language;

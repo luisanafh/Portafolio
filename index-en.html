@@ -336,31 +336,30 @@
             <form id="form" class="contact__form-container">
               <div class="contact__form-group">
                 <label for="name" class="contact__form-label">Name</label>
-                <input type="text" id="name" name="name" class="contact__form-input" required />
+                <input type="text" id="name" name="name" class="contact__form-input" />
               </div>
 
               <div class="contact__form-group">
                 <label for="email" class="contact__form-label">Email</label>
-                <input type="email" id="email" name="email" class="contact__form-input" required />
+                <input type="email" id="email" name="email" class="contact__form-input" />
               </div>
 
               <div class="contact__form-group">
                 <label for="subject" class="contact__form-label">Subject</label>
-                <input type="text" id="subject" name="subject" class="contact__form-input" required />
+                <input type="text" id="subject" name="subject" class="contact__form-input" />
               </div>
 
               <div class="contact__form-group">
                 <label for="message" class="contact__form-label">menssage</label>
-                <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"
-                  required></textarea>
+                <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
               </div>
               <dialog class="contact__form-modal" id="modal">
                 Form submitted successfully!
-                <button type="reset" id="btn_close-modal" class="btn" required>Close</button>
+                <button type="reset" id="btn_close-modal" class="btn">Close</button>
               </dialog>
-              <dialog class="contact__form-modal error" id="error">
-                ERROR <br> Please fill in all the details
-                <button id="close-error" class="btn">Close</button>
+              <dialog class="contact__form-modal error" id="modalError">
+                Please fill in all the details!
+                <button type="reset" id="btn_close-modal-error" class="btn">Cerrar</button>
               </dialog>
 
               <button type="submit" class="btn contact__form-button">

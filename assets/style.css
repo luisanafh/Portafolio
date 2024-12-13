@@ -745,9 +745,7 @@ h1 {
 				padding: 0px;
 				line-height: 50px;
 				border-radius: 15px;
-				a {
-					padding: 20px;
-				}
+
 				&:hover {
 					background-color: var(--tertiary-color);
 					box-shadow: var(--box-shadow);
@@ -765,12 +763,6 @@ h1 {
 				padding: 10px;
 				line-height: 50px;
 				border-radius: 15px;
-				.contact__info-map {
-					margin: 30px;
-				}
-				i {
-					margin: 10px;
-				}
 			}
 		}
 

@@ -857,14 +857,14 @@ h1 {
 		padding: 6px;
 	}
 }
-/*.error {
+.error {
 	width: 300px;
 	height: 150px;
 
 	.btn {
 		padding: 7px;
 	}
-}*/
+}
 
 /* ============= Footer ============= */
 .footer {

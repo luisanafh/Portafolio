@@ -50,32 +50,3 @@ function sendEmail() {
 	});
 }
 export default sendEmail;
-/*function sendEmail() {
-	formDOM.addEventListener('submit', (e) => {
-		e.preventDefault();
-		const params = {
-			name: document.getElementById('name').value,
-			email: document.getElementById('email').value,
-			subject: document.getElementById('subject').value,
-			message: document.getElementById('message').value,
-		};
-
-		if (params.name && params.email && params.message && params.subject) {
-			emailjs.send('service_guf76mb', 'template_8x940er', params).then(
-				(response) => {
-					console.log('SUCCESS!', response.status, response.text);
-					openModal();
-				},
-
-				(error) => {
-					console.log('FAILED...', error);
-				},
-			);
-		} else {
-			openError();
-		}
-	});
-}
-
-export default sendEmail;
-*/

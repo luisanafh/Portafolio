@@ -719,7 +719,7 @@ h1 {
 .contact {
 	background-color: var(--primary-color);
 	.contact__container {
-		gap: 2rem;
+		gap: 6rem;
 		.contact__info {
 			background-color: var(--header-color);
 			box-shadow: var(--shadow);
@@ -828,34 +828,15 @@ h1 {
 	box-shadow: var(--shadow);
 	font-size: 20px;
 	text-align: center;
+	flex-direction: column;
 	.btn {
-		display: inline;
+		display: block;
 		margin: auto;
 		margin-top: 10%;
-		width: 70px;
+		width: 80px;
 		height: 40px;
 		font-size: 16px;
-		padding: 8px;
-	}
-}
-
-.contact__form-modal {
-	background-color: var(--secondary-color);
-	color: var(--text-color);
-	width: 250px;
-	height: 125px;
-	border: 0px;
-	box-shadow: var(--shadow);
-	font-size: 20px;
-	text-align: center;
-	.btn {
-		display: flex;
-		margin: auto;
-		margin-top: 10%;
-		width: 58px;
-		height: 30px;
-		font-size: 16px;
-		padding: 6px;
+		padding: 16px;
 	}
 }
 .error {
